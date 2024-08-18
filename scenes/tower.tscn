@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dikluijmgaba1"]
+
+[ext_resource type="Script" path="res://scripts/tower.gd" id="1_w66kb"]
+[ext_resource type="Texture2D" uid="uid://conc45rsqtst0" path="res://angelo brewig.png" id="2_0xauu"]
+
+[node name="Tower" type="Node2D"]
+script = ExtResource("1_w66kb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.34, 0.34)
+texture = ExtResource("2_0xauu")

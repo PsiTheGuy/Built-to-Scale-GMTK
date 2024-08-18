@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://daxqh81e72u5l"]
+
+[ext_resource type="Script" path="res://scripts/customer.gd" id="1_2bc2r"]
+[ext_resource type="Texture2D" uid="uid://cmnm88kjqhr7k" path="res://icon.svg" id="2_yfaex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4tx62"]
+size = Vector2(128, 128)
+
+[node name="Customer" type="StaticBody2D"]
+script = ExtResource("1_2bc2r")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_yfaex")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_4tx62")
